@@ -1,0 +1,104 @@
+<html>
+
+	<head>
+
+		<link href='https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.24/vue.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.7.2/vue-resource.min.js"></script>
+		<title>happytracks</title>
+
+	</head>
+
+	<body>
+
+		<article id="mainsection1" class="backimage">
+		
+			<!-- <div id="app">
+				<span @click="onClick">{{message}}</span>
+			</div> -->
+
+			<div class="modal-mask" v-if="showModal" transition="modal" @click="showModal = false" v-cloak>
+
+			    <div class="modal-wrapper">
+
+			      <div class="modal-container" @click.stop>
+
+			        <div class="modal-header">
+
+			          <slot class="modal-header-text"name="header">
+			            <h3>Create an account:</h3>
+			          </slot>
+			        </div>
+
+			        <div class="modal-body signup-block">
+			        	<div class="reg-error"> {{registrationError.first}}</div>
+			        	<input type="text" v-model="registration.first" placeholder="First name" class="name" />
+			        	<div class="reg-error"> {{registrationError.last}}</div>
+			        	<input type="text" v-model="registration.last" placeholder="Last name" class="name" />
+			        	<div class="reg-error"> {{registrationError.email}}</div>
+						<input type="text" v-model="registration.email"placeholder="Email" id="email" />
+						<div class="reg-error"> {{registrationError.password}}</div>
+						<input type="password" v-model="registration.password" placeholder="Password" class="password" />
+						<input type="password" v-model="registration.confirm" placeholder="Confirm password" class="password" />
+
+						<div class="reg-error" v-if="registration.password != registration.confirm && registration.confirm != null">
+							<p>Password doesn't match</p>
+						</div>
+
+    					<button @click="onCreateUser">Create</button>
+					</div>
+
+			      </div>
+			    </div>
+
+			  </div>
+
+			<div class="navbar">
+				<ul class="navbarlist">
+					<div class="leftnav">
+						<li><img class="imgplaceholder" src="images/logo_placeholder.png"></li>
+					</div>
+					<div class="rightnav">
+						<li class="navitem">Features</li>
+						<li class="navitem" class="show-modal" @click="modalSignup">Sign up</li>
+					</div>
+				</ul>
+			</div>
+
+			<div class="maintext">
+				<h1 class="maintexth1">Record your happiness. Track your happiness. Improve your happiness.</h1>
+			</div>
+
+			<div class="login-block">
+				<input type="text" v-model="login.email" value="" placeholder="Email" id="email" />
+				<input type="password" v-model="login.password" value="" placeholder="Password" id="password" />
+    			<button @click="onLoginUser">Login</button>
+
+    			<p class="signup">Don't have an account? <a href="#" class="show-modal" @click="modalSignup">Sign up!</a></p>
+			</div>
+
+			<div @click="onDownArrowClick" aria-hidden="true" class="scroll-chevron pure-hidden-xs pure-hidden-sm" id="home-arrow">
+	        	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155 72" clip="0 155 72 0" overflow="hidden">
+	    			<path opacity=".29" fill="#fff" d="M155 77.5c0 42.8-34.7 77.5-77.5 77.5s-77.5-34.7-77.5-77.5 34.7-77.5 77.5-77.5 77.5 34.7 77.5 77.5zm-57-37.1c1-1 1-2.8 0-3.8s-2.8-1-3.8 0l-17.1 17.1-17.1-17.1c-1-1-2.8-1-3.8 0s-1 2.8 0 3.8l20.9 20.9 20.9-20.9z"></path>
+				</svg>
+	   		 </div>
+	   	</article>
+
+	   	<article id="mainsection2">
+
+
+
+	   	</article>
+
+	   	<article id="mainsection3">
+
+
+
+	   	</article>
+
+	   	<script src="https://cdn.rawgit.com/zengabor/zenscroll/dist/zenscroll.js"></script>
+		<script src="app.js"></script>
+	</body>
+
+</html>
