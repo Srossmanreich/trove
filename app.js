@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt-then");
 const app = require("koa")();
 const router = require("koa-router")();
 const jwt = require("koa-jwt");
-const r = require("rethinkdbdash")({db: "happytracks"});
+const r = require("rethinkdbdash")({db: "trove"});
 
 const config = require("./config");
 
