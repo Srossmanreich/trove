@@ -1,0 +1,332 @@
+body{
+  font-family: 'Arvo';
+}
+
+/*Homepage*/
+
+#mainsection1 {
+	height: 100%;
+	margin: 0;
+}
+
+.backimage { 
+	background: url(images/ocean.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.imgplaceholder {
+	max-width: 120px;
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+}
+
+.navbarlist {
+	list-style-type: none;
+}
+
+.navbarlist li {
+	display: inline;
+}
+
+.leftnav {
+	float: left;
+}
+
+.rightnav {
+	float: right;
+	text-align: right;
+	margin-top: 5px;
+	margin-right: 50px;
+}
+
+.rightnav li {
+	padding: 15px;
+	display: inline-block;
+}
+
+.navitem {
+	border-radius: 5%;
+}
+
+.navitem:hover {
+	background-color: white;
+	color: black;
+}
+
+.maintext {
+	position: relative;
+	clear: both;
+	max-width: 50%;
+	text-align: center;
+	margin: auto;
+	padding-top: 10%;
+}
+
+.maintexth1 {
+	font-size: 2em;
+}
+
+.maintexth1, .navbarlist li {
+	color: white;
+}
+
+.scroll-chevron {
+	position: absolute;
+	left: 40%;
+	bottom: 8px;
+	width:20%;
+	margin: auto;
+}
+
+#mainsection2 {
+	background-color: #0099cc;
+	height: 100%;
+}
+
+#mainsection3 {
+	background-color: white;
+	height: 100%;
+}
+
+/*signup*/
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+  position: relative;
+  margin-top: 100px;
+  vertical-align: middle;
+}
+
+.modal-container {
+  position: relative;
+  width: 300px;
+  margin: 0px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  transition: all .3s ease;
+  overflow: hidden;
+}
+
+.modal-header h3 {
+  margin-top: 10;
+  margin-bottom: 0;
+  text-align: center;
+  color: #0099cc;
+}
+
+.modal-body {
+  margin: 20px 0;
+  width: 300px;
+}
+
+.modal-default-button {
+  float: right;
+}
+
+/*
+ * the following styles are auto-applied to elements with
+ * v-transition="modal" when their visiblity is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter, .modal-leave {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/*signup form*/
+
+.signup-block {
+    width: 640px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.signup-block input {
+    width: 40%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 0 20px 0 50px;
+    outline: none;
+    display: block
+}
+
+.signup-block input.name {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.signup-block input.name:focus {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.signup-block input#email {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.signup-block input#email:focus {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.signup-block input.password {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.signup-block input.password:focus {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.signup-block input:active, .signup-block input:focus {
+    border: 1px solid #0099cc;
+}
+
+.signup-block button {
+    width: 40%;
+    height: 40px;
+    background: #0099cc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #0099cc;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+
+.signup-block button:hover {
+    background: white;
+    color: gray;
+    border: 1px solid #0099cc;
+}
+
+[v-cloak] { display:none; }
+
+.reg-error{
+  color: red;
+  text-align: center;
+  width: 40%;
+  margin-bottom: 10px;
+}
+
+/*login*/
+
+.login-block {
+    width: 640px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.login-block input {
+    width: 50%;
+    margin-left: 25%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 0 20px 0 50px;
+    outline: none;
+    display: block
+}
+
+.login-block input#email {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#email:focus {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password:focus {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input:active, .login-block input:focus {
+    border: 1px solid #0099cc;
+}
+
+.login-block button {
+    width: 50%;
+    margin-left: 25%;
+    height: 40px;
+    background: #0099cc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #0099cc;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-block button:hover {
+    background: white;
+    color: gray;
+    border: 1px solid white;
+}
+
+.signup {
+	margin-top: 2%;
+	text-align: center;
+	margin-left: 30%;
+	width: 40%;
+	margin-bottom: 0;
+	color: white;
+}
+
+.signup a {
+	color: white;
+}
+
+

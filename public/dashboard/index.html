@@ -1,0 +1,18 @@
+<html>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style-dashboard.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.24/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.7.2/vue-resource.min.js"></script>
+	<title>happytracks</title>
+</head>
+<body>
+	<div v-show="user.first" v-cloak>
+		<h1>Hello {{user.first}}</h1>
+		<button @click="onLogoutUser">Logout</button>
+
+		<script src="/dashboard/app.js"></script>
+	</div>
+</body>
+</html>

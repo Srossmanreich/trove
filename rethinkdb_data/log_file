@@ -1,0 +1,41 @@
+2016-06-09T18:09:14.645888000 0.044087s notice: Recursively removing directory /Users/SydneyRossman-Reich/Documents/Code/happytracks/rethinkdb_data/tmp
+2016-06-09T18:09:14.652859000 0.051066s notice: Initializing directory /Users/SydneyRossman-Reich/Documents/Code/happytracks/rethinkdb_data
+2016-06-09T18:09:14.656295000 0.054496s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/SydneyRossman-Reich/Documents/Code/happytracks/rethinkdb_data' did not already exist or is empty.)
+2016-06-09T18:09:14.656377000 0.054576s notice: Running rethinkdb 2.3.1 (CLANG 7.3.0 (clang-703.0.29))...
+2016-06-09T18:09:14.694268000 0.092468s notice: Running on Darwin 15.5.0 x86_64
+2016-06-09T18:09:14.694344000 0.092543s notice: Loading data from directory /Users/SydneyRossman-Reich/Documents/Code/happytracks/rethinkdb_data
+2016-06-09T18:09:14.903460000 0.301660s info: Automatically using cache size of 100 MB
+2016-06-09T18:09:14.903475000 0.301674s warn: Cache size does not leave much memory for server and query overhead (available memory: 540 MB).
+2016-06-09T18:09:14.903480000 0.301679s warn: Cache size is very low and may impact performance.
+2016-06-09T18:09:14.908273000 0.306473s notice: Listening for intracluster connections on port 29015
+2016-06-09T18:09:14.917603000 0.315802s notice: Listening for client driver connections on port 28015
+2016-06-09T18:09:14.917847000 0.316046s notice: Listening for administrative HTTP connections on port 8080
+2016-06-09T18:09:14.917851000 0.316050s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-06-09T18:09:14.917858000 0.316057s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-06-09T18:09:14.917860000 0.316059s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-06-09T18:09:14.917866000 0.316065s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-06-09T18:09:14.917870000 0.316069s notice: Server ready, "Sydneys_MacBook_Air_local_okm" aa48b3f9-9ec4-46f2-bd93-ca6b7a1f0889
+2016-06-09T18:09:15.357190000 0.755340s notice: A newer version of the RethinkDB server is available: 2.3.3. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-06-09T18:29:47.928407000 1233.296260s info: Table 135fb426-108a-43a6-95c0-86a096251d3e: Starting a new Raft election for term 1.
+2016-06-09T18:29:47.934204000 1233.302057s info: Table 135fb426-108a-43a6-95c0-86a096251d3e: Added replica on this server.
+2016-06-09T18:29:47.961412000 1233.329265s info: Table 135fb426-108a-43a6-95c0-86a096251d3e: This server is Raft leader for term 1. Latest log index is 0.
+2016-06-12T18:04:45.062979000 46096.310293s info: Table 135fb426-108a-43a6-95c0-86a096251d3e: Configuration is changing.
+2016-06-15T11:57:29.202322000 86430.336431s warn: Problem when checking for new versions of RethinkDB: HTTP request to update.rethinkdb.com failed.
+2016-06-19T09:34:24.036545000 172800.990773s notice: A newer version of the RethinkDB server is available: 2.3.4. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-07-08T10:09:15.548328000 0.397429s notice: Running rethinkdb 2.3.1 (CLANG 7.3.0 (clang-703.0.29))...
+2016-07-08T10:09:15.580963000 0.430019s notice: Running on Darwin 15.5.0 x86_64
+2016-07-08T10:09:15.581026000 0.430081s notice: Loading data from directory /Users/SydneyRossman-Reich/Documents/Code/happytracks/rethinkdb_data
+2016-07-08T10:09:15.628172000 0.477227s info: Automatically using cache size of 100 MB
+2016-07-08T10:09:15.628184000 0.477239s warn: Cache size does not leave much memory for server and query overhead (available memory: 252 MB).
+2016-07-08T10:09:15.628204000 0.477259s warn: Cache size is very low and may impact performance.
+2016-07-08T10:09:15.632751000 0.481806s notice: Listening for intracluster connections on port 29015
+2016-07-08T10:09:15.673710000 0.522765s notice: Listening for client driver connections on port 28015
+2016-07-08T10:09:15.673863000 0.522918s notice: Listening for administrative HTTP connections on port 8080
+2016-07-08T10:09:15.673865000 0.522920s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-07-08T10:09:15.673866000 0.522920s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-07-08T10:09:15.673873000 0.522928s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-07-08T10:09:15.673874000 0.522928s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-07-08T10:09:15.673877000 0.522932s notice: Server ready, "Sydneys_MacBook_Air_local_okm" aa48b3f9-9ec4-46f2-bd93-ca6b7a1f0889
+2016-07-08T10:09:16.059685000 0.908740s notice: A newer version of the RethinkDB server is available: 2.3.4. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-07-08T10:09:17.635363000 2.484349s info: Table 135fb426-108a-43a6-95c0-86a096251d3e: Starting a new Raft election for term 2.
+2016-07-08T10:09:17.662881000 2.511867s info: Table 135fb426-108a-43a6-95c0-86a096251d3e: This server is Raft leader for term 2. Latest log index is 3.
