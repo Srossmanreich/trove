@@ -1,65 +1,28 @@
 var app = new Vue({
   el: "body",
   data: {
-    showModal: false,
-    login: {
-      email: null,
-      password: null
+    signup: {
+      email: null
     },
-    loginSuccess: false,
-    loginError: {
-      email: null,
-      password: null
-    },
-    registration: {
-      email: null,
-      first: null,
-      last: null,
-      password: null,
-      confirm: null
-    },
-    registrationError: {
-      email: null,
-      first: null,
-      last: null,
-      password: null
-    },
-    registrationSuccess: false
+    signupSuccess: false,
+    signupError: {
+      email: null
+    }
   },
   methods: {
-    onDownArrowClick(ev) {
-      zenscroll.intoView(document.querySelector("#mainsection2"))
-    },
-    onLoginUser(ev){
-      this.$http.post("/api/login", this.login).then(output => {
+    onSignupUser(ev){
+      this.$http.post("/api/users", this.signup).then(output => {
           if (output.data.success) {
-            this.loginSuccess = true;
+            this.signupSuccess = true;
             localStorage.setItem("token", output.data.token);
             localStorage.setItem("user", JSON.stringify(output.data.user));
-            window.location.href = "/dashboard";
+            window.location.href = "/thankyou";
           }
           else {
-            this.loginError = Object.assign({}, ...output.data.errors)
+            this.signupError = Object.assign({}, ...output.data.errors)
           }
       })
-    },
-    onCreateUser(ev) {
-      this.$http.post("/api/users", this.registration).then(output => {
-
-            if (output.data.success) {
-              this.registrationSuccess = true;
-              localStorage.setItem("token", output.data.token);
-              localStorage.setItem("user", JSON.stringify(output.data.user[0]));
-              window.location.href = "/dashboard";
-            }
-            else {
-              this.registrationError = Object.assign({}, ...output.data.errors)
-            }
-          });
-    },
-    modalSignup(ev) {
-    	app.showModal = true;
-    },
+    }
   }
 })
 
