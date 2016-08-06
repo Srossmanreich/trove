@@ -1,7 +1,6 @@
 var app = new Vue({
   el: "body",
   data: {
-    showModal: false,
     signup: {
       email: null
     },

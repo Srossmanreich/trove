@@ -1,9 +1,7 @@
 var app = new Vue({
 	el: "body",
 	data: {
-		user: {
-			email: null
-		}
+		email: null
 	},
 
 	ready() {
@@ -12,7 +10,8 @@ var app = new Vue({
 			return;
 		}
 
-		this.user = JSON.parse(localStorage.getItem("user"));
+		let user = JSON.parse(localStorage.getItem("user"));
+		this.email = user[0].email;
 	},
 
 	methods: {

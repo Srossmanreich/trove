@@ -37,9 +37,9 @@ router.post("/api/users", function*() {
 	};
 });
 
-router.get("/api/test", jwt({secret: config.jwtSecret}), function*() {
-	this.body = {success: "You passed the correct auth header"};
-});
+// router.get("/api/test", jwt({secret: config.jwtSecret}), function*() {
+// 	this.body = {success: "You passed the correct auth header"};
+// });
 
 app.use(require('koa-static')(__dirname + "/public"));
 app.use(router.routes());
