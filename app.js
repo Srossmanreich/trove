@@ -42,4 +42,4 @@ router.post("/api/users", function*() {
 
 app.use(require('koa-static')(__dirname + "/public"));
 app.use(router.routes());
-app.listen(8000);
+app.listen(80);
