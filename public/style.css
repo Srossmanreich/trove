@@ -87,7 +87,7 @@ body{
 }
 
 .signup-block input:active, .signup-block input:focus {
-    border: 1px solid purple;
+    border: 1px solid maroon;
 }
 
 .signup-block button {
@@ -107,8 +107,8 @@ body{
 }
 
 .signup-block button:hover {
-    background: white;
-    color: gray;
-    border: 1px solid white;
+    background: maroon;
+    color: white;
+    border: 1px solid maroon;
 }
 
