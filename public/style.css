@@ -4,7 +4,7 @@ body{
 
 /*Homepage*/
 
-#mainsection1 {
+.mainsection1 {
 	height: 100%;
 	margin: 0;
 }
@@ -39,12 +39,9 @@ body{
 	color: purple;
 }
 
-.scroll-chevron {
-	position: absolute;
-	left: 40%;
-	bottom: 8px;
-	width:20%;
-	margin: auto;
+.specialtext {
+    font-weight: bolder;
+    color: maroon;
 }
 
 /*
@@ -58,14 +55,14 @@ body{
 
 /*login*/
 
-.login-block {
+.signup-block {
     width: 640px;
     padding: 20px;
     border-radius: 5px;
     margin: 0 auto;
 }
 
-.login-block input {
+.signup-block input {
     width: 50%;
     margin-left: 25%;
     height: 42px;
@@ -79,21 +76,21 @@ body{
     display: block
 }
 
-.login-block input#email {
+.signup-block input#email {
     background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
     background-size: 16px 80px;
 }
 
-.login-block input#email:focus {
+.signup-block input#email:focus {
     background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
     background-size: 16px 80px;
 }
 
-.login-block input:active, .login-block input:focus {
+.signup-block input:active, .signup-block input:focus {
     border: 1px solid purple;
 }
 
-.login-block button {
+.signup-block button {
     width: 50%;
     margin-left: 25%;
     height: 40px;
@@ -109,23 +106,9 @@ body{
     cursor: pointer;
 }
 
-.login-block button:hover {
+.signup-block button:hover {
     background: white;
     color: gray;
     border: 1px solid white;
 }
-
-.signup {
-	margin-top: 2%;
-	text-align: center;
-	margin-left: 30%;
-	width: 40%;
-	margin-bottom: 0;
-	color: white;
-}
-
-.signup a {
-	color: white;
-}
-
 
