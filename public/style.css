@@ -28,7 +28,7 @@ body{
 	max-width: 50%;
 	text-align: center;
 	margin: auto;
-	padding-top: 10%;
+	padding-top: 15%;
 }
 
 .maintexth1 {
@@ -112,3 +112,8 @@ body{
     border: 1px solid maroon;
 }
 
+@media (max-width: 600px){
+    .maintext {
+        max-width: 90%
+    }
+}
