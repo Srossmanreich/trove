@@ -10,7 +10,7 @@ var app = new Vue({
 			return;
 		}
 
-		let user = JSON.parse(localStorage.getItem("user"));
+		var user = JSON.parse(localStorage.getItem("user"));
 		this.email = user[0].email;
 	},
 
