@@ -1,30 +1,23 @@
-"use strict";
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 var app = new Vue({
   el: "body",
   data: {
-    signup: {
-      email: null
-    },
+    signup: {email: null},
+    user: {email: null},
+    signupError: {email: null},
     signupSuccess: false,
-    signupError: {
-      email: null
-    }
   },
   methods: {
     onSignupUser: function onSignupUser(ev) {
-      var _this = this;
+      var that = this;
 
-      this.$http.post("/api/users", this.signup).then(function (output) {
+      this.$http.post("/api/users", this.signup).then(function(output) {
         if (output.data.success) {
-          _this.signupSuccess = true;
-          localStorage.setItem("token", output.data.token);
-          localStorage.setItem("user", JSON.stringify(output.data.user));
-          window.location.href = "/thankyou";
+          that.signupSuccess = true;
+          that.user = output.data.user[0];
+          console.log(that.user);
         } else {
-          _this.signupError = Object.assign.apply(Object, [{}].concat(_toConsumableArray(output.data.errors)));
+          that.signupError = Object.assign.apply(Object, [{}].concat(output.data.errors));
         }
       });
     }
