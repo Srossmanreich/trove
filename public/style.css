@@ -10,6 +10,8 @@ body{
 	margin: 0;
 }
 
+
+
 .backimage { 
 	background: url(images/trove.jpeg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -18,7 +20,9 @@ body{
 	background-size: cover;
 }
 
-
+.mainsection1[orient="landscape"] {
+    height: inherit;
+}
 
 .maintext {
 	position: relative;
